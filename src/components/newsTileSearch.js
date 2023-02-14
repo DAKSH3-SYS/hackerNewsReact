@@ -38,7 +38,7 @@ const NewsTileSearch = ({ dateRange, page, query, sort, type }) => {
         : "";
 
     return Axios.get(
-      `http://hn.algolia.com/api/v1/${filterSortString}?query=${query}&tags=${filterTypeString}${filterTimeString}&page=${pageinSearch}&hitsPerPage=${30}`
+      `https://hn.algolia.com/api/v1/${filterSortString}?query=${query}&tags=${filterTypeString}${filterTimeString}&page=${pageinSearch}&hitsPerPage=${30}`
     );
   }
 
