@@ -11,7 +11,7 @@ const Tile = () => {
   const [isLoading, setIsLoading] = useState(false);
   function getSortedStories(pagenum = 0) {
     return Axios.get(
-      `http://hn.algolia.com/api/v1/search_by_date?tags=story&page=${pagenum}&hitsPerPage=${30}`
+      `https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${pagenum}&hitsPerPage=${30}`
     );
   }
   const handlePageChange = (value) => {
